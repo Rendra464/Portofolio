@@ -1,0 +1,131 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  overflow: hidden; /* Jangan scroll selama loading */
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Supaya loader muncul di atas segalanya */
+  animation: fade-out 0.5s ease-out 2s forwards; /* Tambahkan animasi fade-out */
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.e-loadholder {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border: 5px solid #1B5F70;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.e-loadholder:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  transform-origin: center;
+  animation: outerRotate2 30s infinite linear;
+  z-index: 0;
+}
+
+.m-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  color: #888;
+  text-align: center;
+  border: 5px solid #278190;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 20;
+  text-transform: uppercase;
+}
+
+.m-loader:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 106%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  transform-origin: center;
+  animation: outerRotate1 15s infinite linear;
+  z-index: -1;
+}
+
+.e-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  line-height: 9.3;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  border: 5px solid #3BB2D0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 20;
+  animation: textColour 1s alternate linear infinite;
+}
+
+@keyframes outerRotate1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes outerRotate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes textColour {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #3BB2D0;
+  }
+}

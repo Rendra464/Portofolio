@@ -1,0 +1,35 @@
+
+body {
+    font-family: 'Poppins';
+}
+
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-description:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+.about {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,152 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #89f7fe, #66a6ff);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 6s ease infinite;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.loading-container {
+    text-align: center;
+}
+
+.cloud {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.cloud-shape {
+    background: #e0e0e0;
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cloud-shape::after,
+.cloud-shape::before {
+    content: '';
+    background: #e0e0e0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cloud-shape::after {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    left: -15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cloud-shape::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: -10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sun {
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
+    animation: spin 4s linear infinite;
+    z-index: 0;
+}
+
+.rain {
+    position: absolute;
+    bottom: -20px;
+    left: 30%;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+}
+
+.drop {
+    width: 3px;
+    height: 15px;
+    background-color: #999;
+    margin: 0 3px;
+    border-radius: 2px;
+    animation: rain 0.5s linear infinite, fadeInOut 1s linear infinite;
+}
+
+.drop:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.drop:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.loading-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rain {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundAnimation {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}

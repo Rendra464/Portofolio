@@ -1,0 +1,45 @@
+/* Loading.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+}
+
+.spinner {
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.dot1, .dot2 {
+    width: 20px;
+    height: 20px;
+    background-color: #61dafb;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.dot2 {
+    animation-delay: -1s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loading-text {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}

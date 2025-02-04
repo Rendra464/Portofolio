@@ -1,0 +1,21 @@
+body {
+    font-family: 'Poppins';
+}
+
+.education {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.education p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}

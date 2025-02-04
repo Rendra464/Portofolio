@@ -1,0 +1,62 @@
+/* Base cursor styles */
+.cursor, .cursor-outline {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease-out, background-color 0.2s ease-out;
+}
+
+/* Inner cursor */
+.cursor {
+    width: 8px;
+    height: 8px;
+    background-color: #ff6a00;
+    transition: transform 0.1s ease-out;
+}
+
+/* Outer cursor (outline) */
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff6a00;
+    opacity: 0.7;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.15s ease-out;
+}
+
+/* When active (e.g., click or hover) */
+.cursor-active {
+    transform: scale(1.5);
+    background-color: #feb47b;
+}
+
+.outline-active {
+    transform: scale(2.5);
+    border-color: #feb47b;
+    opacity: 0.9;
+}
+
+/* Animation for outline pulsation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    
+}
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor,
+    .cursor-outline {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    color: #333;
+    overflow: hidden;
+}
+
+    }
+    .loader::before,
+    .loader::after {    
+        content: "";
+        grid-area: 1/1;
+        background:
+        linear-gradient(currentColor 0 0) center,
+        linear-gradient(currentColor 0 0) center;
+        background-size: 100% 10px,10px 100%;
+        background-repeat: no-repeat;
+    }
+    .loader::after {
+        transform: rotate(45deg);
+    }
+
+    @keyframes l19 { 
+        100%{transform: rotate(1turn)}
+    }

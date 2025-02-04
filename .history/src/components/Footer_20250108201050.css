@@ -1,0 +1,61 @@
+.footer {
+    background-color: #131a22;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 150px; 
+}
+
+.contact-box {
+    position: absolute; 
+    top: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff; 
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    z-index: 10; 
+}
+
+.contact-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-icons a {
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00; 
+}
+
+
+.footer-bottom {
+    background-color: #0f141a;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 1; /* Ensure the text stays below the floating box */
+}
+
+.footer-bottom p {
+    margin: 0;
+}

@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  overflow: hidden; /* Prevent scroll during loading */
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  position: relative;
+  z-index: 10;
+  animation: fade-out 0.5s ease-out 2s forwards; /* Fade-out after 2 seconds */
+}
+
+.main-content {
+  display: none; /* Hidden until the loader fades out */
+}
+
+.main-content.fade-in {
+  display: block;
+  animation: fade-in 0.5s ease-in;
+}
+
+@keyframes fade-out {
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Loader CSS (Your provided styles) */
+.e-loadholder {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border: 5px solid #1B5F70;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.e-loadholder:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  transform-origin: center;
+  animation: outerRotate2 30s infinite linear;
+  z-index: 0;
+}
+
+.m-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  color: #888;
+  text-align: center;
+  border: 5px solid #278190;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 20;
+  text-transform: uppercase;
+}
+
+.m-loader:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 106%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  transform-origin: center;
+  animation: outerRotate1 15s infinite linear;
+  z-index: -1;
+}
+
+.e-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  line-height: 9.3;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+  border: 5px solid #3BB2D0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 20;
+  animation: textColour 0.5s alternate linear infinite;
+}
+
+/* Add the rest of your loader styles */
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

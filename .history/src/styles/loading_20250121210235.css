@@ -1,0 +1,57 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+    overflow: hidden;
+}
+
+.gear-loader {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.gear {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #8d7958;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    animation: spin 1.5s linear infinite;
+}
+
+.gear1 {
+    border-top: 6px solid #61dafb;
+    animation-delay: 0s;
+}
+
+.gear2 {
+    border-top: 6px solid #ffb400;
+    animation-delay: -0.5s;
+}
+
+.gear3 {
+    border-top: 6px solid #ff5e57;
+    animation-delay: -1s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}

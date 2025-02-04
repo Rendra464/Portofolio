@@ -1,0 +1,51 @@
+/* General Footer Styling */
+.footer {
+    background-color: #131a22; /* Background color for the footer */
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Contact Section */
+.footer-contact {
+    background-color: #007bff; /* Blue box */
+    padding: 40px 20px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+    max-width: 800px;
+}
+
+.footer-contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons a {
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00; /* Hover color for icons */
+}
+
+/* Bottom Section */
+.footer-bottom {
+    background-color: #0f141a; /* Darker strip */
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

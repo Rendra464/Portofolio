@@ -1,0 +1,22 @@
+.footer {
+    background-color: #131a22;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 150px; 
+}
+
+
+.footer-bottom {
+    background-color: #0f141a;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 1; 
+}
+
+.footer-bottom p {
+    margin: 0;
+}

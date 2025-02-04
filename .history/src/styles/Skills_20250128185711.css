@@ -1,0 +1,67 @@
+.skills {
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00bfff;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #00bfff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.skill-icon {
+    font-size: 1.8rem;
+    color: #00bfff;
+}

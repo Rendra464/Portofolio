@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins';
+}
+
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-left {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+}
+
+.experience-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.exper-list li {
+    margin-bottom: 20px;
+}
+
+.exper-list h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.exper-list p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+    }
+
+    .about-title,
+    .exper-title {
+        font-size: 1.5rem;
+    }
+
+    .about-description,
+    .exper-list h3,
+    .exper-list p {
+        font-size: 0.9rem;
+    }
+}

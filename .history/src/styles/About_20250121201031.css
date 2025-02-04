@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins';
+}
+
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.about-left {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.about-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+.experience-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-icon {
+    font-size: 2rem;
+    color: #ff5722;
+    margin-right: 15px;
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.experience-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.experience-duration {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left,
+    .about-right {
+        text-align: center;
+        animation: none;
+    }
+
+    .experience-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
