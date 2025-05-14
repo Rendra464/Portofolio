@@ -13,7 +13,7 @@ function App() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 4000);
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -22,7 +22,7 @@ function App() {
         return (
             <div className="loading-container">
                 <div className="loader"></div>
-                <h2 className="loading-text">Loading<span className="dots">...</span></h2>
+                <h2 className="loading-text">&nbsp;Loading<span className="dots">...</span></h2>
             </div>
         );
     }
