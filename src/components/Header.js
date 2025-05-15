@@ -10,10 +10,10 @@ const Header = () => {
                 <a href="mailto:renadikara@gmail.com" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope className="icon" />
                 </a>
-                <a href="http://linkedin.com/in/rendra-adikara/" target="_blank" rel="noopener noreferrer">
+                <a href="http://linkedin.com/in/rendraadikara/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="icon" />
                 </a>
-                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/rendra464" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="icon" />
                 </a>
             </div>
