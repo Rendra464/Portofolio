@@ -5,7 +5,6 @@ import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 const Header = () => {
     return (
         <nav className="header">
-            <a href='/' className="logo">Rendra Adikara</a>
             <div className="contact-icons">
                 <a href="mailto:renadikara@gmail.com" target="_blank" rel="noopener noreferrer">
                     <FaEnvelope className="icon" />
