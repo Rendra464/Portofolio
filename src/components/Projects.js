@@ -17,7 +17,7 @@ const projects = [
             'Trowulan Travel" is a modern and user-friendly travel platform designed to simplify trip planning and booking experiences.',
         image: './Trowulan.png', 
         tags: ['React', 'HTML & CSS' ,'SQL Server', 'C#', '.net'],
-        link: 'trowulan.vercel.app',
+        link: 'https://trowulan-rendras-projects-f1bc061b.vercel.app/',
     },
     {
         title: 'Course Landing Page',
