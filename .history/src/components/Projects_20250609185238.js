@@ -17,7 +17,7 @@ const projects = [
             'Trowulan Travel" is a modern and user-friendly travel platform designed to simplify trip planning and booking experiences.',
         image: './Trowulan.png', 
         tags: ['React', 'HTML & CSS' ,'SQL Server', 'C#', '.net'],
-        link: 'trowulan.vercel.app',
+        link: '',
     },
     {
         title: 'Course Landing Page',
@@ -25,7 +25,7 @@ const projects = [
             'A modern and responsive course landing page designed to showcase online classes, ebooks, or tutorials. Built with clean HTML, CSS, JavaScript, and styled using Tailwind CSS for fast and easy customization.',
         image: './landingpage.png', 
         tags: ['HTML & CSS' , 'Javascript' , 'Tailwind CSS'],
-        link: 'https://github.com/Rendra464/Template-UI',
+        link: '',
     },
 ];
 
